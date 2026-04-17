@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range Rover — Lead by Example</title>
+    <meta name="description" content="Discover the Range Rover family. Build, configure and reserve your luxury SUV — Range Rover, Sport, Velar and Evoque.">
+    <meta name="author" content="Range Rover" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    
+    
+    <meta property="og:type" content="website" />
+
+    <!-- Amplitude: Analytics + Session Replay + Web Experiment -->
+    <script src="https://cdn.amplitude.com/script/c4c715e24914e241e41bcd0cb5a4c9f1.js"></script>
+    <!-- Amplitude Guides & Surveys -->
+    <script src="https://cdn.amplitude.com/script/c4c715e24914e241e41bcd0cb5a4c9f1.engagement.js"></script>
+    <script>
+      (function () {
+        try {
+          if (window.sessionReplay && window.amplitude) {
+            window.amplitude.add(window.sessionReplay.plugin({
+              sampleRate: 1,
+              shouldInlineImages: true,
+              recordCanvas: true,
+              collectFonts: true,
+              privacyConfig: {
+                defaultMaskLevel: 'light',
+                blockSelector: [],
+                maskSelector: [],
+                unmaskSelector: ['img', 'picture', 'video', 'source', '[style*="background-image"]'],
+              },
+            }));
+          }
+          if (window.engagement && window.amplitude) {
+            window.amplitude.add(window.engagement.plugin());
+          }
+          if (window.amplitude) {
+            window.amplitude.init("c4c715e24914e241e41bcd0cb5a4c9f1", {
+              fetchRemoteConfig: true,
+              autocapture: true,
+            });
+          }
+        } catch (e) {
+          console.warn("Amplitude init failed", e);
+        }
+      })();
+    </script>
+    <meta property="og:title" content="Range Rover — Lead by Example">
+  <meta name="twitter:title" content="Range Rover — Lead by Example">
+  <meta property="og:description" content="Discover the Range Rover family. Build, configure and reserve your luxury SUV — Range Rover, Sport, Velar and Evoque.">
+  <meta name="twitter:description" content="Discover the Range Rover family. Build, configure and reserve your luxury SUV — Range Rover, Sport, Velar and Evoque.">
+  <meta name="twitter:card" content="summary">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
